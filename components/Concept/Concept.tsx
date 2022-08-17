@@ -5,7 +5,7 @@ export const Concept = () => {
         <section className={Styles.concept}>
             <a id="bento" className="anchor"></a>
             <h2>
-                <span>What's ben-TO?</span>
+                <span>Whats ben-TO?</span>
                 低価格で身体に良い<br />お弁当を集めたプラットフォームです
             </h2>
             <p>
