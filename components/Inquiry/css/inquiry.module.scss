@@ -1,0 +1,144 @@
+.inquiry {
+    width: calc(100% - 40px);
+    margin: 0 auto 80px;
+    .form {
+        dl {
+            margin: 0 0 24px 0;
+            padding: 0 0 24px 0;
+            border-bottom: 1px solid #E6E6E6;
+            dt {
+                font-size: 12px;
+                font-weight: bold;
+                font-family: 'Noto Sans JP', sans-serif;
+                margin: 0 0 12px 0;
+                span {
+                    font-size: 10px;
+                    font-weight: 300;
+                    line-height: 1;
+                    color: #fff;
+                    margin: 0 0 0 10px;
+                    padding: 0 6px 2px;
+                    background: #BA5042;
+                }
+                .any {
+                    background: #B5B5B5;
+                }
+            }
+            dd {
+                .input {
+                    font-size: 14px;
+                    font-family: 'Noto Sans JP', sans-serif;
+                    line-height: 1.4;
+                    width: 100%;
+                    padding: 16px;
+                    border: none;
+                    outline: none;
+                    border: 1px solid #333;
+                    border-radius: 8px;
+                    background: #fff;
+                }
+                textarea {
+                    height: 300px;
+                    resize: vertical;
+                }
+                ::placeholder {
+                    color: rgba(57,57,57,.5);
+                    font-size: 16px;
+                }
+                .caution {
+                    margin: 12px 0 0 0;
+                    li {
+                        display: flex;
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: #BA5042;
+                    }
+                }
+            }
+        }
+        .btn {
+            display: block;
+            font-size: 12px;
+            margin: 0 auto;
+            padding: 20px 48px;
+            border: 1px solid #333;
+            border-radius: 30px;
+            background: #fff;
+            transition: 0.5s;
+            &:hover {
+                color: #fff;
+                border: 1px solid #6DB461;
+                background: #6DB461;
+            }
+        }
+    }
+    @media screen and (min-width:768px) {
+        width: calc(100% - 160px);
+    }
+    @media screen and (min-width:1024px) {
+        margin: 0 auto 100px;
+        .form {
+            dl {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 0 30px 0;
+                padding: 0 0 30px 0;
+                dt {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 14px;
+                    width: 20%;
+                    margin: 0;
+                    span {
+                        font-size: 12px;
+                        margin: 0;
+                        padding: 2px 6px 3px;
+                    }
+                }
+                dd {
+                    width: 72%;
+                    .input {
+                        padding: 20px 30px;
+                        border: 2px solid #333;
+                    }
+                    textarea {
+                        height: 260px;
+                    }
+                    .caution {
+                        li {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .dtNickName {
+                position: relative;
+                top: -26px;
+            }
+            .alignTop {
+                align-items: flex-start;
+            }
+            .btn {
+                font-size: 16px;
+                padding: 24px 100px;
+                border: 1px solid #333;
+                border-radius: 48px;
+            }
+        }
+    }
+    @media screen and (min-width:1200px) {
+        width: 945px;
+        .form {
+            dl {
+                dt {
+                    width: 200px;
+                }
+                dd {
+                    width: 670px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.footer {
+    padding: 20px 0;
+    .innerFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 40px);
+        margin: 0 auto;
+        .snsWrapper {
+            .snsIcon {
+                width: 38px;
+                height: 38px;
+                margin: 0 10px 0 0;
+            }
+        }
+        .copyright {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            span {
+                font-size: 24px;
+                margin: 0 4px 0 0;
+            }
+        }
+    }
+    @media screen and (min-width:768px) {
+        .innerFooter {
+            width: calc(100% - 160px);
+        }
+    }
+    @media screen and (min-width:1024px) {
+        .innerFooter {
+            width: 945px;
+        }
+    }
+}

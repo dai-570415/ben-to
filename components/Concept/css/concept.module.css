@@ -1,0 +1,83 @@
+.concept {
+    margin: 0 auto 40px;
+    position: relative;
+}
+.concept .scrollIcon {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+}
+.concept .scrollIcon::after {
+    content: "";
+    display: inline-block;
+    border-left: 1px solid #333;
+    width: 0;
+    -webkit-animation-name: scrollIconAnimation;
+            animation-name: scrollIconAnimation;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+@-webkit-keyframes scrollIconAnimation {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+@keyframes scrollIconAnimation {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+.concept .leftLeaf {
+    width: auto;
+    height: 104px;
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+}
+.concept .rightLeaf {
+    width: auto;
+    height: 80px;
+    position: absolute;
+    bottom: 370px;
+    right: 0;
+}
+@media screen and (min-width: 768px) {
+    .concept .leftLeaf {
+        height: 200px;
+    }
+    .concept .rightLeaf {
+        height: 160px;
+        bottom: 340px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .concept {
+        margin: 0 auto 100px;
+    }
+    .concept .scrollIcon {
+        height: 200px;
+    }
+    .concept .leftLeaf {
+        height: 386px;
+        bottom: 200px;
+    }
+    .concept .rightLeaf {
+        height: 400px;
+        bottom: 520px;
+    }
+}

@@ -1,0 +1,42 @@
+.about {
+    color: #333;
+    padding: 80px 0;
+    background-image: url(../../../public/img/about/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.about .innerAbout {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+.about .innerAbout .link {
+    text-align: center;
+    display: block;
+    color: #fff;
+    width: 192px;
+    margin: 0 auto;
+    padding: 16px 40px;
+    border: 1px solid #6DB461;
+    border-radius: 30px;
+    background: #6DB461;
+    transition: 0.5s;
+}
+.about .innerAbout .link:hover {
+    color: #6DB461;
+    background: #fff;
+}
+@media screen and (min-width: 1200px) {
+    .about {
+        padding: 100px 0;
+    }
+    .about .innerAbout h2 {
+        margin: 0 auto 48px;
+    }
+    .about .innerAbout p {
+        margin: 0 auto 40px;
+    }
+    .about .innerAbout .link {
+        border: 2px solid #6DB461;
+    }
+}

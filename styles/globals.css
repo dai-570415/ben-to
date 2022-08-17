@@ -1,0 +1,169 @@
+/* font-family: 'Noto Sans JP', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+/* font-family: 'Josefin Sans', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'EB Garamond', serif; */
+/* font-family: 'Zen Maru Gothic', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap");
+*, h1, h2, h3, h4, h5, h6, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    color: #000;
+    background: #fff;
+    -ms-scroll-chaining: none;
+        overscroll-behavior: none;
+}
+
+::-moz-selection {
+    background: #ff9500;
+    color: #fff;
+}
+
+::selection {
+    background: #ff9500;
+    color: #fff;
+}
+
+img::-moz-selection {
+    background: none;
+}
+
+img::selection {
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a.anchor {
+    display: block;
+    padding-top: 70px;
+    margin-top: -70px;
+}
+
+ul li {
+    list-style: none;
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Zen Maru Gothic", sans-serif;
+    line-height: 1.5;
+    color: #6DB461;
+    margin: 0 auto 32px;
+}
+h2 span {
+    display: block;
+    font-size: 13px;
+    margin: 0 auto 32px;
+}
+@media screen and (min-width: 1200px) {
+    h2 {
+        font-size: 40px;
+        margin: 0 auto 40px;
+    }
+    h2 span {
+        font-size: 20px;
+    }
+}
+
+p {
+    text-align: center;
+    font-size: 13px;
+    line-height: 2.3;
+    margin: 0 auto 40px;
+}
+@media screen and (min-width: 1200px) {
+    p {
+        font-size: 16px;
+        margin: 0 auto 100px;
+    }
+}
+
+.sp {
+    display: block;
+}
+
+.pc {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .sp {
+        display: none;
+    }
+    .pc {
+        display: block;
+    }
+}
+.slick-prev:before,
+.slick-next:before {
+    content: "" !important;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+.slick-prev {
+    left: 32px !important;
+    z-index: 1000 !important;
+}
+
+.slick-next {
+    right: 44px !important;
+}
+
+.slick-prev:before {
+    background-image: url(../public/img/common/left_arrow.svg);
+}
+
+.slick-next:before {
+    background-image: url(../public/img/common/right_arrow.svg);
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    border: none !important;
+}
+
+.slick-disabled {
+    display: none !important;
+}
+
+@media screen and (min-width: 1200px) {
+    .slick-prev {
+        width: 48px;
+        height: 48px;
+    }
+    .slick-prev::before {
+        width: 48px;
+        height: 48px;
+    }
+    .slick-next {
+        width: 48px;
+        height: 48px;
+    }
+    .slick-next::before {
+        width: 48px;
+        height: 48px;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .slick-prev {
+        left: -48px !important;
+    }
+    .slick-next {
+        right: -20px !important;
+    }
+}

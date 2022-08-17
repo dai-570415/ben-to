@@ -1,0 +1,185 @@
+.boxItem {
+    margin: 80px auto;
+    position: relative;
+    .logo {
+        position: absolute;
+        top: 0;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+        filter: drop-shadow(0 -5px 20px rgba(0,0,0,0.1));
+    }
+    position: relative;
+    .boxItemItems {
+        padding: 0 20px;
+        .boxItemItem {
+            position: relative;
+            .boxItemImage {
+                position: relative;
+                .eyecatch {
+                    width: 100%;
+                    height: 340px;
+                    object-fit: cover;
+                    border-radius: 20px;
+                }
+                .station {
+                    width: 88px;
+                    height: 88px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    .triangle {
+                        width: 100%;
+                        height: auto;
+                    }
+                    .stationName {
+                        text-align: center;
+                        font-size: 10px;
+                        font-weight: bold;
+                        color: #fff;
+                        transform: rotate(-45deg);
+                        position: absolute;
+                    }
+                    .fiveText { top: 28px; right: 28px; }
+                }
+                .nickName {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #fff;
+                    filter: drop-shadow(0 0 1px rgba(0,0,0,1));
+                    position: absolute;
+                    bottom: 64px;
+                    left: 24px;
+                }
+                .boxItemDetail {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: justify;
+                    font-size: 13px;
+                    line-height: 1.5;
+                    color: #fff;
+                    padding: 16px 24px;
+                    border-radius: 0 0 20px 20px;
+                    background: rgba(0,0,0,0.7);
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                }
+                transition: .5s;
+                &:hover {
+                    opacity: .7;
+                }
+            }
+        }
+    }
+    .scrollIcon {
+        display: none;
+    }
+}
+@media screen and (min-width:768px) {
+    .boxItem {
+        .logo {
+            width: 130px;
+            height: auto;
+            top: -10px;
+        }
+        width: calc(100% - 40px);
+        .boxItemItems {
+            padding: 0 14px;
+        }
+        .scrollIcon {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+            width: 100%;
+            height: 128px;
+            writing-mode: vertical-rl;
+            position: absolute;
+            bottom: -80px;
+            z-index: 1000;
+            &::after {
+                content: "";
+                display: inline-block;
+                border-left: 1px solid #333;
+                width: 0;
+                margin: 12px 0 0 0;
+                animation-name: scrollIconAnimation;
+                animation-duration: 1.5s;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+            }
+            @keyframes scrollIconAnimation {
+                0% {
+                    height: 0%;
+                }
+                100% {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1024px) {
+    .boxItem {
+        margin: 100px auto 200px;
+        width: calc(100% - 80px);
+        .boxItemItems {
+            padding: 0 20px;
+            .boxItemItem {
+                .boxItemImage {
+                    .station {
+                        width: 140px;
+                        height: 140px;
+                        .stationName {
+                            font-size: 16px;
+                        }
+                        .fiveText { top: 44px; right: 42px; }
+                    }
+                    .nickName {
+                        bottom: 80px;
+                        left: 28px;
+                    }
+                    .boxItemDetail {
+                        font-size: 14px;
+                        padding: 24px 28px;
+                        border-radius: 0 0 40px 40px;
+                    }
+                    .eyecatch {
+                        height: 480px;
+                        border-radius: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1200px) {
+    .boxItem {
+        width: 1200px;
+        .logo {
+            width: 200px;
+        }
+        .boxItemItems {
+            .boxItemItem {
+                .boxItemImage {
+                    .eyecatch {
+                        width: 100%;
+                        height: 567px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        .scrollIcon {
+            font-size: 20px;
+            height: 278px;
+            bottom: -200px;
+        }
+    }
+}

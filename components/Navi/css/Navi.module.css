@@ -1,0 +1,116 @@
+.spNavi {
+    margin: 0 0 40px 0;
+}
+.spNavi ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
+    background: #eee;
+}
+.spNavi ul li {
+    margin: 0 16px;
+}
+.spNavi ul li a {
+    font-size: 14px;
+    color: #666;
+}
+.spNavi ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    margin: 0 auto;
+    padding: 0 0 4px 0;
+    border-bottom: 1px solid #666;
+    transition: 0.5s;
+}
+.spNavi ul li a:hover::after {
+    width: 100%;
+}
+
+.pcNavi {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .spNavi {
+        display: none;
+    }
+    .pcNavi {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 32px);
+        position: absolute;
+        top: -40px;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .pcNavi ul {
+        display: flex;
+    }
+    .pcNavi ul li {
+        margin: 0 32px 0 0;
+    }
+    .pcNavi ul li a {
+        font-size: 14px;
+    }
+    .pcNavi ul li a:hover {
+        color: #6DB461;
+    }
+    .pcNavi ul li a::after {
+        content: "";
+        display: block;
+        width: 0;
+        margin: 0 auto;
+        padding: 0 0 4px 0;
+        border-bottom: 2px solid #6DB461;
+        transition: 0.5s;
+    }
+    .pcNavi ul li a:hover::after {
+        width: 100%;
+    }
+    .pcNavi ul li a span {
+        font-size: 10px;
+        color: #6DB461;
+        margin: 0 8px 0 0;
+        position: relative;
+        bottom: 2px;
+    }
+    .pcNavi .btn {
+        font-size: 12px;
+        color: #fff;
+        padding: 8px 20px;
+        border: 1px solid #6DB461;
+        border-radius: 30px;
+        background: #6DB461;
+        transition: 0.5s;
+    }
+    .pcNavi .btn:hover {
+        color: #6DB461;
+        background: #fff;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .pcNavi {
+        width: calc(100% - 40px);
+    }
+    .pcNavi ul li {
+        margin: 0 40px 0 0;
+    }
+    .pcNavi ul li a {
+        font-size: 16px;
+    }
+    .pcNavi .btn {
+        font-size: 16px;
+        padding: 12px 40px;
+        border: 2px solid #6DB461;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .pcNavi {
+        width: 1160px;
+        top: -50px;
+    }
+}

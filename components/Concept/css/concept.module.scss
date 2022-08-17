@@ -1,0 +1,69 @@
+.concept {
+    margin: 0 auto 40px;
+    position: relative;
+    .scrollIcon {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        writing-mode: vertical-rl;
+        &::after {
+            content: "";
+            display: inline-block;
+            border-left: 1px solid #333;
+            width: 0;
+            animation-name: scrollIconAnimation;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+        }
+        @keyframes scrollIconAnimation {
+            0% {
+                height: 0%;
+            }
+            100% {
+                height: 100%;
+            }
+        }
+    }
+    .leftLeaf {
+        width: auto;
+        height: 104px;
+        position: absolute;
+        bottom: 14px;
+        left: 0;
+    }
+    .rightLeaf {
+        width: auto;
+        height: 80px;
+        position: absolute;
+        bottom: 370px;
+        right: 0;
+    }
+
+    @media screen and (min-width:768px) {
+        .leftLeaf {
+            height: 200px;
+            // bottom: 14px;
+        }
+        .rightLeaf {
+            height: 160px;
+            bottom: 340px;
+        }
+    }
+    @media screen and (min-width:1200px) {
+        margin: 0 auto 100px;
+        .scrollIcon {
+            height: 200px;
+        }
+        .leftLeaf {
+            height: 386px;
+            bottom: 200px;
+        }
+        .rightLeaf {
+            height: 400px;
+            bottom: 520px;
+        }
+    }
+}

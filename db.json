@@ -1,0 +1,28 @@
+{
+  "boxItem": [
+    { 
+      "id": "soaiuniv",
+      "nickName": "dai",
+      "boxName": "相愛大学 共同開発弁当",
+      "shop": "KOHYO三宮店",
+      "url1": "http://mint-kobe.jp/access/",
+      "url2": "https://www.soai.ac.jp/blogs/2022/03/kohyo.html",
+      "plice": "537円(税込)",
+      "station": "各線三宮駅",
+      "eyecatch": "soaiuniv.jpg",
+      "created_at": "2022.8.10"
+    },
+    { 
+      "id": "dammy1",
+      "nickName": "",
+      "boxName": "身体にいい弁当",
+      "shop": "shop",
+      "url1": "https://example.com",
+      "url2": "url2",
+      "plice": "000円(税込)",
+      "station": "各線大阪駅",
+      "eyecatch": "dammy.jpg",
+      "created_at": "2022.8.8"
+    }
+  ]
+}

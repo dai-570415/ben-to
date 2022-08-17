@@ -1,0 +1,146 @@
+.inquiry {
+    width: calc(100% - 40px);
+    margin: 0 auto 80px;
+}
+.inquiry .form dl {
+    margin: 0 0 24px 0;
+    padding: 0 0 24px 0;
+    border-bottom: 1px solid #E6E6E6;
+}
+.inquiry .form dl dt {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Noto Sans JP", sans-serif;
+    margin: 0 0 12px 0;
+}
+.inquiry .form dl dt span {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 1;
+    color: #fff;
+    margin: 0 0 0 10px;
+    padding: 0 6px 2px;
+    background: #BA5042;
+}
+.inquiry .form dl dt .any {
+    background: #B5B5B5;
+}
+.inquiry .form dl dd .input {
+    font-size: 14px;
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.4;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background: #fff;
+}
+.inquiry .form dl dd textarea {
+    height: 300px;
+    resize: vertical;
+}
+.inquiry .form dl dd ::-moz-placeholder {
+    color: rgba(57, 57, 57, 0.5);
+    font-size: 16px;
+}
+.inquiry .form dl dd :-ms-input-placeholder {
+    color: rgba(57, 57, 57, 0.5);
+    font-size: 16px;
+}
+.inquiry .form dl dd ::placeholder {
+    color: rgba(57, 57, 57, 0.5);
+    font-size: 16px;
+}
+.inquiry .form dl dd .caution {
+    margin: 12px 0 0 0;
+}
+.inquiry .form dl dd .caution li {
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    color: #BA5042;
+}
+.inquiry .form .btn {
+    display: block;
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 20px 48px;
+    border: 1px solid #333;
+    border-radius: 30px;
+    background: #fff;
+    transition: 0.5s;
+}
+.inquiry .form .btn:hover {
+    color: #fff;
+    border: 1px solid #6DB461;
+    background: #6DB461;
+}
+@media screen and (min-width: 768px) {
+    .inquiry {
+        width: calc(100% - 160px);
+    }
+}
+@media screen and (min-width: 1024px) {
+    .inquiry {
+        margin: 0 auto 100px;
+    }
+    .inquiry .form dl {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 30px 0;
+        padding: 0 0 30px 0;
+    }
+    .inquiry .form dl dt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        width: 20%;
+        margin: 0;
+    }
+    .inquiry .form dl dt span {
+        font-size: 12px;
+        margin: 0;
+        padding: 2px 6px 3px;
+    }
+    .inquiry .form dl dd {
+        width: 72%;
+    }
+    .inquiry .form dl dd .input {
+        padding: 20px 30px;
+        border: 2px solid #333;
+    }
+    .inquiry .form dl dd textarea {
+        height: 260px;
+    }
+    .inquiry .form dl dd .caution li {
+        font-size: 14px;
+    }
+    .inquiry .form .dtNickName {
+        position: relative;
+        top: -26px;
+    }
+    .inquiry .form .alignTop {
+        align-items: flex-start;
+    }
+    .inquiry .form .btn {
+        font-size: 16px;
+        padding: 24px 100px;
+        border: 1px solid #333;
+        border-radius: 48px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .inquiry {
+        width: 945px;
+    }
+    .inquiry .form dl dt {
+        width: 200px;
+    }
+    .inquiry .form dl dd {
+        width: 670px;
+    }
+}
